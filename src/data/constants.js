@@ -65,7 +65,7 @@ export const skills = [
     ],
   },
     {
-      title: "Frontend",
+      title: "Web Development",
       skills: [
         {
           name: "HTML",
