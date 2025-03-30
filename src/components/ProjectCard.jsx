@@ -1,31 +1,35 @@
 // ProjectCard.jsx
-import { Col } from "react-bootstrap";
-import { Github, Globe } from 'lucide-react';  // Import icons
+import React from "react";
+import { Github, ExternalLink } from 'lucide-react';
 
-export const ProjectCard = ({ title, description, imgUrl, githubLink, deployLink }) => {
+export const ProjectCard = ({ title, description, imgUrl, githubLink, demoLink, tags, index, isVisible }) => {
   return (
-    <Col size={12} sm={6} md={4}>
-      <div className="proj-imgbx">
-        <img src={imgUrl} className="proj-img" />
-        <div className="proj-txtx">
-          <h4>{title}</h4>
-          <span>{description}</span>
-          <div className="proj-links">
-            {githubLink && (
-              <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                <Github size={20} />
-              </a>
-            )}
-            {deployLink && (
-              <a href={deployLink} target="_blank" rel="noopener noreferrer">
-                <Globe size={20} />
-              </a>
-            )}
-          </div>
+    <div className="project-card">
+      <div className="project-image-container">
+        <img src={imgUrl} alt={title} className="project-image" />
+      </div>
+      <div className="project-content">
+        <h3 className="project-title">{title}</h3>
+        
+        <div className="project-tags">
+          {tags.map((tag, index) => (
+            <span key={index} className="project-tag">{tag}</span>
+          ))}
+        </div>
+        
+        <p className="project-description">{description}</p>
+        
+        <div className="project-links">
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" className="project-link code-link">
+            <Github size={18} />
+            <span>Code</span>
+          </a>
+          <a href={demoLink} target="_blank" rel="noopener noreferrer" className="project-link demo-link">
+            <ExternalLink size={18} />
+            <span>Demo</span>
+          </a>
         </div>
       </div>
-    </Col>
-  )
-}
-
-// Projects.jsx - Update the projects array to include links
+    </div>
+  );
+};

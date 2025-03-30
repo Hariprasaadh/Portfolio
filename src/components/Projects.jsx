@@ -1,12 +1,11 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+// Projects.jsx
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import aria from "../assets/img/aria.png";
-import ariaai from "../assets/img/ariaai.webp";
-
-import cropcore from "../assets/img/Banner.jpg"
-import career from "../assets/img/careertrack.png"
-
-import projImg3 from "../assets/img/project-img3.png";
+import cropcore from "../assets/img/Banner.jpg";
+import dronedetect from "../assets/img/dronedetect.jpg";
+import career from "../assets/img/careertrack.png";
+import ariaai from "../assets/img/aria.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -14,27 +13,37 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
   const projects = [
     {
-      title: "Smart Farming Solutions",
-      description: "Agri Intelligence",
+      title: "Crop Core Tech",
+      description: "An AI-driven platform revolutionizing modern agriculture.",
       imgUrl: cropcore,
-      githubLink: "https://github.com/mithilgirish/Crop-Core_Tech",
-      deployLink: "https://devfolio.co/projects/crop-core-tech-5028"
+      githubLink: "https://github.com/Hariprasaadh/Crop-Core_Tech",
+      demoLink: "https://devfolio.co/projects/crop-core-tech-5028",
+      tags: ["React Native", "FastAPI", "YOLOv8", "Tensorflow"]
     },
     {
-      title: "Navigate Your Future",
-      description: "Career Empowerment",
+      title: "CareerTrack",
+      description: "An all-in-one platform empowering students in their career journey.",
       imgUrl: career,
-      githubLink: "https://github.com/Hariprasaadh/CareerTrack",
-      deployLink: "https://navigate-future.com"
+      githubLink: "https://github.com/Hariprasaadh/careertrack-new",
+      demoLink: "https://careertrack-one.vercel.app/",
+      tags: ["Next.js", "FastAPI", "Langchain","LLMs"]
     },
     {
-      title: "AI Mental Health Companion",
-      description: "Adaptive Response Model",
-      imgUrl: ariaai,
-      githubLink: "https://github.com/hariprasaadh/careertrack/blob/main/AI/TherapistBot/chatbot.py",
-      deployLink: "https://ariahealthbot.streamlit.app/"
+      title: "DroneDetect",
+      description: "An AI-powered system for real-time drone threat classification.",
+      imgUrl: dronedetect,
+      githubLink: "https://github.com/Hariprasaadh/careertrack-new",
+      demoLink: "https://careertrack-one.vercel.app/",
+      tags: ["Next.js", "Computer Vision", "DeepSort","Threat Classification"]
     },
-   
+    {
+      title: "Aria Chatbot",
+      description: "An AI-driven conversational agent for student counseling and ethical decision-making.",
+      imgUrl: ariaai,
+      githubLink: "https://github.com/Hariprasaadh/Aria-Chatbot",
+      demoLink: "https://aria-chat.streamlit.app/",
+      tags: ["Streamlit", "LangChain", "Sentiment Analysis","Chatbot"]
+    },
   ];
 
   return (
@@ -43,36 +52,29 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div>
-                <h2>Projects</h2>
-                <p>With expertise in AI/ML, and computer vision, I have worked on a diverse range of projects, demonstrating my ability to solve real-world problems through innovative and effective solutions.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+              {({ isVisible }) => (
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Projects</h2>
+                  <p>With expertise in AI/ML, and computer vision, I have worked on a diverse range of projects, demonstrating my ability to solve real-world problems through innovative and effective solutions.</p>
                   
-                  <Tab.Content id="slideInUp">
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                  <Row>
+                    {projects.map((project, index) => (
+                      <Col key={index} sm={12} md={6} className="mb-4">
+                        <ProjectCard
+                          {...project}
+                          index={index}
+                          isVisible={isVisible}
+                        />
+                      </Col>
+                    ))}
+                  </Row>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="background" />
     </section>
-  )
-}
+  );
+};
