@@ -32,8 +32,8 @@ export const Projects = () => {
       title: "DroneDetect",
       description: "An AI-powered system for real-time drone threat classification.",
       imgUrl: dronedetect,
-      githubLink: "https://github.com/Hariprasaadh/careertrack-new",
-      demoLink: "https://careertrack-one.vercel.app/",
+      githubLink: "https://github.com/Hariprasaadh/drone_threat",
+      demoLink: "",
       tags: ["Next.js", "Computer Vision", "DeepSort","Threat Classification"]
     },
     {
