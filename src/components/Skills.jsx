@@ -3,14 +3,12 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import { useEffect, useState } from "react";
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -36,7 +34,16 @@ export const Skills = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
                         <p>These are the skills I have honed over the past few years, driving my passion for innovation and problem-solving.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <Carousel 
+                          responsive={responsive} 
+                          infinite={true} 
+                          className="owl-carousel owl-theme skill-slider"
+                          autoPlay={true}
+                          autoPlaySpeed={3000}
+                          removeArrowOnDeviceType={["tablet", "mobile"]}
+                          swipeable={true}
+                          draggable={true}
+                        >
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Machine Learning</h5>

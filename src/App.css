@@ -393,15 +393,15 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
   margin-top: -60px;
 }
 .skill h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
 }
 .skill-slider {
   width: 80%;
@@ -962,6 +962,16 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
 }
 
 /* Skills Section Mobile Styling */
+@media screen and (max-width: 1200px) {
+  .skill-bx {
+    padding: 40px 30px;
+  }
+  
+  .skill h2 {
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .skill-bx {
     border-radius: 30px;
@@ -975,6 +985,39 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
   
   .skill-slider .item img {
     width: 70%;
+  }
+  
+  .skill h2 {
+    font-size: 36px;
+  }
+  
+  .skill p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skill-bx {
+    border-radius: 20px;
+    padding: 25px 15px;
+  }
+  
+  .skill h2 {
+    font-size: 32px;
+  }
+  
+  .skill p {
+    font-size: 14px;
+    margin: 10px 0 40px 0;
+  }
+  
+  .skill-slider .item img {
+    width: 60%;
+  }
+  
+  .skill-slider .item h5 {
+    font-size: 16px;
   }
 }
 
