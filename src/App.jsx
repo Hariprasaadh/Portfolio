@@ -9,10 +9,12 @@ import { Contact } from "./components/Contact";
 import Skillss from './components/Skillss';
 import Experience from './components/Experience';
 import Education from './components/Education';
+import StarMovingEffect from './components/StarMovingEffect';
 
 function App() {
   return (
     <div className="App">
+      <StarMovingEffect />
       <NavBar />
       <Banner />
       <Skills />
@@ -21,7 +23,6 @@ function App() {
       <Projects />
       <Education />
       <Contact />
-      
     </div>
   );
 }
