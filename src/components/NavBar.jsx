@@ -37,8 +37,11 @@ export const NavBar = () => {
         expanded={expanded}
       >
         <Container>
-          <Navbar.Brand href="/">
-            {/* Add your logo here if needed */}
+          <Navbar.Brand href="/" className="logo-container">
+            <div className="logo">
+              <span className="logo-text">HP</span>
+              <div className="logo-glow"></div>
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle 
             aria-controls="basic-navbar-nav"
