@@ -186,7 +186,7 @@ export const skills = [
 export const experiences = [
     {
       id: 0,
-      img: "https://media.licdn.com/dms/image/v2/D560BAQFWqj3KKQRIeQ/company-logo_200_200/company-logo_200_200/0/1730280973296?e=1746662400&v=beta&t=gWfcawpnnZnxxcVNktzv1kMyAP-41IT43q920uGmaFs",
+      img: "ospc.webp",
       role: "AI/ML Lead",
       company: "Open Source Programming Club",
       date: "Oct 2024 - Present",
@@ -199,11 +199,10 @@ export const experiences = [
         "Streamlit",
         "FastAPI",
       ],
-      doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
     },
     {
       id: 1,
-      img: "https://media.licdn.com/dms/image/v2/D4E0BAQFI_gqUcEKaOg/company-logo_200_200/company-logo_200_200/0/1707752854204?e=1746662400&v=beta&t=lmCrbMLGS8usoxsIA-KNxIi1MD3h-qcMo2gg1DhwZnc",
+      img: "aic.png",
       role: "Technical Team Member",
       company: "Artficial Intelligence Club",
       date: "Jan 2024 - Present",
@@ -217,7 +216,6 @@ export const experiences = [
         "JavaScript",
         "React",
       ],
-      doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
     },
 ];
 
