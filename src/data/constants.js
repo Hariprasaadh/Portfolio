@@ -26,6 +26,11 @@ export const skills = [
         name: "Javascript",
         image:
           "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+      },
+      {
+        name: "Typescript",
+        image:
+          "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
       }
     ],
   },
