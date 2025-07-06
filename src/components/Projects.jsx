@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import cropcore from "../assets/img/Banner.jpg";
 import dronedetect from "../assets/img/dronedetect.jpg";
+import konvoo from "../assets/img/konvoo.png";
 import career from "../assets/img/careertrack.png";
 import ariaai from "../assets/img/aria.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -13,20 +14,20 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
   const projects = [
     {
-      title: "Crop Core Tech",
-      description: "An AI-driven platform revolutionizing modern agriculture.",
-      imgUrl: cropcore,
-      githubLink: "https://github.com/Hariprasaadh/Crop-Core_Tech",
-      demoLink: "https://devfolio.co/projects/crop-core-tech-5028",
-      tags: ["React Native", "FastAPI", "YOLOv8", "Tensorflow"]
-    },
-    {
       title: "CareerTrack",
       description: "An all-in-one platform empowering students in their career journey.",
       imgUrl: career,
       githubLink: "https://github.com/Hariprasaadh/careertrack-new",
       demoLink: "https://careertrack-one.vercel.app/",
       tags: ["Next.js", "FastAPI", "Langchain","LLMs"]
+    },
+    {
+      title: "Konvoo",
+      description: "A modern social media platform built for seamless, real-time connection.",
+      imgUrl: konvoo,
+      githubLink: "https://github.com/Hariprasaadh/Konvoo-social-media-app",
+      demoLink: "https://konvoo.vercel.app/",
+      tags: ["Next.js", "PostgreSQL", "Prisma","TypeScript"]
     },
     {
       title: "DroneDetect",
@@ -37,12 +38,12 @@ export const Projects = () => {
       tags: ["Next.js", "Computer Vision", "DeepSort","Threat Classification"]
     },
     {
-      title: "Aria Chatbot",
-      description: "An AI-driven conversational agent for student counseling and ethical decision-making.",
-      imgUrl: ariaai,
-      githubLink: "https://github.com/Hariprasaadh/Aria-Chatbot",
-      demoLink: "https://aria-chat.streamlit.app/",
-      tags: ["Streamlit", "LangChain", "Sentiment Analysis","Chatbot"]
+      title: "Crop Core Tech",
+      description: "An AI-driven platform revolutionizing modern agriculture.",
+      imgUrl: cropcore,
+      githubLink: "https://github.com/Hariprasaadh/Crop-Core_Tech",
+      demoLink: "https://devfolio.co/projects/crop-core-tech-5028",
+      tags: ["React Native", "FastAPI", "YOLOv8", "Tensorflow"]
     },
   ];
 

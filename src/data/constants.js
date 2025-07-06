@@ -50,7 +50,7 @@ export const skills = [
       {
         name: "Tensorflow",
         image:
-          "https://static-00.iconduck.com/assets.00/tensorflow-icon-1911x2048-1m2s54vn.png",
+          "https://icon.icepanel.io/Technology/svg/TensorFlow.svg",
       },
       {
         name: "Keras",
@@ -65,7 +65,7 @@ export const skills = [
       {
         name: "OpenCV",
         image:
-          "https://static-00.iconduck.com/assets.00/opencv-icon-1657x2048-3wu3ib6x.png",
+          "https://icon.icepanel.io/Technology/svg/OpenCV.svg",
       },
     ],
   },
