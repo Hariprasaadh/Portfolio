@@ -226,8 +226,8 @@ export const education = [
       school: "Vellore Institute of Technology, Chennai",
       date: "Aug 2023 - July 2027",
       grade: " 9.64 CGPA",
-      desc: "Currently pursuing a B.Tech in Computer Science and Engineering (AI & ML) at VIT University, Chennai. Engaged in hands-on learning and research in Artificial Intelligence, Machine Learning, and Computer Vision, with a strong focus on real-world applications and innovative problem-solving. Actively participating in hackathons, projects, and industry-related internships to gain practical experience and contribute to impactful solutions.",
-      degree: "BTech, Computer Science and Engineering (Specializing in AI & ML)",
+      desc: "Currently pursuing a B.Tech in Computer Science and Engineering (AI & ML) at VIT University, Chennai. Engaged in hands-on learning and research in Artificial Intelligence, Machine Learning, and Computer Vision. Strong focus on real-world applications and innovative problem-solving. Actively participating in hackathons, projects, and industry-related internships to gain practical experience and contribute to impactful solutions.",
+      degree: "B.Tech Computer Science & Engineering<br>(AI & ML)",
     },
     {
       id: 1,
@@ -235,8 +235,8 @@ export const education = [
       school: "PS Senior Secondary School, Mylapore",
       date: "Apr 2008 - May 2023",
       grade: " 94.4%",
-      desc: "Completed 12th grade at PS Senior Secondary School with a focus on Computer Science, building a solid foundation in programming, problem-solving, and computational concepts. Developed a keen interest in technology and innovation, paving the way for further studies in Artificial Intelligence and Machine Learning.",
-      degree: "CBSE(XII), Computer Science",
+      desc: "Completed 12th grade at PS Senior Secondary School with a focus on Computer Science. Built a solid foundation in programming, problem-solving, and computational concepts. Developed a keen interest in technology and innovation, paving the way for further studies in Artificial Intelligence and Machine Learning.",
+      degree: "CBSE Class XII<br>Computer Science",
     },
     
   ];
