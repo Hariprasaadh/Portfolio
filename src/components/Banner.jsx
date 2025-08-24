@@ -72,10 +72,8 @@ export const Banner = () => {
               </p>
               <button
                 onClick={() => window.open(resume, "_blank")}
-                className="d-flex align-items-center gap-2 px-4 py-2 bg-primary text-white rounded-3 shadow-lg border-0 hover:bg-blue-700 transition-all"
-                style={{ fontSize: "1.1rem", fontWeight: "500" }}
               >
-                Check my Resume <ArrowRightCircle size={25} />
+                Check my Resume <ArrowRightCircle />
               </button>
             </div>
           </Col>
