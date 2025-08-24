@@ -54,8 +54,8 @@ export const Contact = () => {
     
     try {
       const result = await emailjs.send(
-        'service_st6rkc6', 
-        'template_0gyif1o', 
+        process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
         {
           from_name: `${formDetails.firstName} ${formDetails.lastName}`,
           from_email: formDetails.email,
@@ -63,7 +63,7 @@ export const Contact = () => {
           message: formDetails.message,
           to_name: 'Hariprasaadh',
         },
-        'YzCE_cIzWhmnMzFT1' 
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       );
       
       if (result.text === 'OK') {
