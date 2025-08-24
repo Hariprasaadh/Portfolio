@@ -33,8 +33,9 @@ export const NavBar = () => {
     <Router>
       <Navbar 
         expand="md" 
-        className={scrolled ? "scrolled" : ""} 
+        className={`modern-navbar ${scrolled ? "scrolled" : ""}`}
         expanded={expanded}
+        fixed="top"
       >
         <Container>
           <Navbar.Brand href="/" className="logo-container">
@@ -43,14 +44,17 @@ export const NavBar = () => {
               <div className="logo-glow"></div>
             </div>
           </Navbar.Brand>
+          
           <Navbar.Toggle 
             aria-controls="basic-navbar-nav"
             onClick={() => setExpanded(!expanded)}
+            className="modern-toggler"
           >
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
+          
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="ms-auto align-items-center">
               {[
                 ['home', 'Home'],
                 ['skills', 'Skills'],
@@ -61,14 +65,15 @@ export const NavBar = () => {
                 <Nav.Link
                   key={value}
                   href={`#${value}`}
-                  className={activeLink === value ? 'active navbar-link' : 'navbar-link'}
+                  className={`modern-nav-link ${activeLink === value ? 'active' : ''}`}
                   onClick={() => onUpdateActiveLink(value)}
                 >
-                  {text}
+                  <span className="nav-text">{text}</span>
                 </Nav.Link>
               ))}
             </Nav>
-            <span className="navbar-text">
+            
+            <div className="navbar-text">
               <div className="social-icon">
                 {[
                   ['https://www.linkedin.com/in/hariprasaadh-k-a5430a287', linkedin, 'LinkedIn'],
@@ -80,17 +85,19 @@ export const NavBar = () => {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="social-link"
                   >
                     <img src={src} alt={alt} />
                   </a>
                 ))}
               </div>
-              <HashLink to='#connect'>
+              
+              <HashLink to='#connect' className="connect-btn-wrapper">
                 <button className="vvd">
                   <span>Let's Connect</span>
                 </button>
               </HashLink>
-            </span>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>

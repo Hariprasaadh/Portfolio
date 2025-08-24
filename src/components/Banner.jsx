@@ -68,7 +68,7 @@ export const Banner = () => {
                 innovate, and solve complex problems, I thrive in challenging
                 environments that push me to grow. With a strong analytical mindset
                 and a commitment to excellence, I continuously seek opportunities to
-                make a meaningful impact through technology and innovation. 🚀
+                make a meaningful impact through technology and innovation. 
               </p>
               <button
                 onClick={() => window.open(resume, "_blank")}

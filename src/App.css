@@ -297,124 +297,172 @@ p.success {
 p.danger {
 	color: red;
 }
-/************ Navbar CSS ************/
-nav.navbar {
-  padding: 12px 0;
+/************ Modern Navbar CSS ************/
+nav.navbar.modern-navbar {
+  padding: 16px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: all 0.3s ease-in-out;
-  background: rgba(18, 18, 18, 0.25);
-  font-size: 18px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(25px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar Scroll Effect */
-nav.navbar.scrolled {
-  padding: 10px 0;
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+/* Navbar Scroll Effect - Enhanced Glassmorphism */
+nav.navbar.modern-navbar.scrolled {
+  padding: 12px 0;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(30px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
-/* Navbar Links */
-nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 500;
-  color: #fff !important;
-  letter-spacing: 0.5px;
-  padding: 10px 18px;
-  font-size: 18px;
-  opacity: 0.85;
-  transition: all 0.3s ease-in-out;
-  position: relative;
-  border-radius: 5px;
-}
-
-/* Hover Effect */
-nav.navbar .navbar-nav .nav-link.navbar-link:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  opacity: 1;
-}
-
-/* Active (Selected) Navbar Link */
-nav.navbar .navbar-nav .nav-link.navbar-link.active {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
-  opacity: 1;
-}
-
-/* Underline Effect */
-nav.navbar .navbar-nav .nav-link.navbar-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 50%;
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  transition: all 0.3s ease-in-out;
-  transform: translateX(-50%);
-}
-
-/* Expand underline on hover & active */
-nav.navbar .navbar-nav .nav-link.navbar-link:hover::after,
-nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
-  width: 70%;
-}
-
-/* Social Icons */
-.social-icon {
+/* Modern Container with Better Spacing */
+nav.navbar.modern-navbar .container {
   display: flex;
-  gap: 12px;
-  margin-left: 20px;
-}
-
-.social-icon a {
-  width: 42px;
-  height: 42px;
-  background: rgba(217, 217, 217, 0.15);
-  display: flex;
-  border-radius: 50%;
   align-items: center;
-  justify-content: center;
-  border: 1.5px solid rgba(255, 255, 255, 0.6);
-  transition: all 0.3s ease-in-out;
+  justify-content: space-between;
 }
 
-.social-icon a:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.2);
+/* Enhanced Navbar Links */
+nav.navbar.modern-navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.social-icon a img {
-  width: 50%;
-  transition: 0.3s ease-in-out;
+nav.navbar.modern-navbar .navbar-nav .nav-link.modern-nav-link {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9) !important;
+  letter-spacing: 0.5px;
+  padding: 12px 20px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  margin: 0 4px;
 }
 
-/* Navbar Text */
+/* Enhanced Hover Effect */
+nav.navbar.modern-navbar .navbar-nav .nav-link.modern-nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(170, 54, 124, 0.3);
+  color: rgba(255, 255, 255, 1) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(170, 54, 124, 0.2);
+}
+
+/* Active Link - Modern Gradient Style */
+nav.navbar.modern-navbar .navbar-nav .nav-link.modern-nav-link.active {
+  background: linear-gradient(135deg, rgba(170, 54, 124, 0.2), rgba(74, 47, 189, 0.2));
+  border: 1px solid rgba(170, 54, 124, 0.4);
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 8px 25px rgba(170, 54, 124, 0.25);
+}
+
+/* Navigation Text Animation */
+.nav-text {
+  position: relative;
+  z-index: 2;
+}
+
+/* Connect Button Wrapper */
+.connect-btn-wrapper {
+  text-decoration: none;
+}
+
+/* Modern Social Icons */
 .navbar-text {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  color: #fff !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  gap: 20px;
 }
 
-/* Navbar Button */
-/* Navbar Button - Modern Animated Background */
-.vvd {
-  padding: 12px 28px;
-  font-size: 18px;
-  font-weight: 700;
-  border: 2px solid #fff;
-  border-radius: 30px;
-  color: #fff !important;
-  margin-left: 20px;
+.social-icon {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-icon a {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  display: flex;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  background: transparent;
-  transition: all 0.3s ease-in-out;
+}
+
+.social-icon a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(170, 54, 124, 0.2), rgba(74, 47, 189, 0.2));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon a:hover::before {
+  opacity: 1;
+}
+
+.social-icon a:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(170, 54, 124, 0.3);
+  box-shadow: 0 8px 25px rgba(170, 54, 124, 0.2);
+}
+
+.social-icon a img {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  filter: brightness(0.9);
+}
+
+.social-icon a:hover img {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
+
+/* Modern Connect Button */
+.vvd {
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  color: rgba(255, 255, 255, 0.9) !important;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .vvd::before {
@@ -424,8 +472,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #AA367C, #4A2FBD);
-  transition: all 0.4s ease-in-out;
+  background: linear-gradient(135deg, #AA367C, #4A2FBD);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: -1;
 }
 
@@ -434,90 +482,128 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
 }
 
 .vvd:hover {
-  border: 2px solid transparent;
-  transform: translateY(-4px);
-  color: #fff !important; /* Ensures text color stays white */
+  border: 1px solid rgba(170, 54, 124, 0.4);
+  transform: translateY(-2px);
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 8px 25px rgba(170, 54, 124, 0.3);
 }
 
 
-/* Make the default Bootstrap navbar toggler icon white */
+/* Modern Mobile Menu Toggle */
 .navbar-toggler {
-  border: none; /* Remove the default border */
+  border: none;
   outline: none;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(170, 54, 124, 0.3);
+  transform: translateY(-2px);
 }
 
 .navbar-toggler-icon {
-  filter: invert(1); /* Turns the default black icon into white */
+  filter: invert(1);
+  width: 20px;
+  height: 20px;
 }
 
-
-/* ✅ Mobile & Tablet Responsiveness */
+/* Enhanced Mobile & Tablet Responsiveness */
 @media (max-width: 991px) {
-  nav.navbar {
-    padding: 15px 0;
-    background: rgba(18, 18, 18, 0.95);
+  nav.navbar.modern-navbar {
+    padding: 16px 0;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(30px);
   }
 
-  nav.navbar .navbar-nav {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  nav.navbar.modern-navbar .navbar-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
-  nav.navbar .navbar-nav .nav-link.navbar-link {
-    padding: 12px 18px;
-    font-size: 17px;
+  nav.navbar.modern-navbar .navbar-nav .nav-link.modern-nav-link {
+    padding: 14px 20px;
+    font-size: 16px;
+    margin: 4px 0;
+    width: 100%;
+    border-radius: 12px;
   }
 
   .navbar-text {
-    padding: 12px 0;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    margin: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 15px;
   }
 
   .social-icon {
-    margin: 12px 0;
+    margin: 0;
+    justify-content: center;
   }
 
   .vvd {
-    margin: 12px 0;
-    padding: 10px 24px;
-    font-size: 17px;
+    margin: 0;
+    padding: 12px 28px;
+    font-size: 15px;
   }
 }
 
-/* ✅ Ultra Small Screens (Mobile) */
+/* Enhanced Mobile Styles */
 @media (max-width: 768px) {
-  nav.navbar {
-    padding: 10px 0;
+  nav.navbar.modern-navbar {
+    padding: 12px 0;
   }
 
-  nav.navbar .navbar-nav {
-    flex-direction: column;
-    align-items: center;
+  nav.navbar.modern-navbar .navbar-nav {
+    margin: 15px;
+    padding: 15px;
   }
 
-  nav.navbar .navbar-nav .nav-link.navbar-link {
-    font-size: 16px;
-    padding: 10px 16px;
+  nav.navbar.modern-navbar .navbar-nav .nav-link.modern-nav-link {
+    padding: 12px 18px;
+    font-size: 15px;
   }
 
-  .social-icon {
-    margin-left: 0;
-    gap: 10px;
+  .social-icon a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-icon a img {
+    width: 18px;
+    height: 18px;
   }
 
   .vvd {
-    font-size: 16px;
-    padding: 10px 20px;
+    padding: 10px 24px;
+    font-size: 14px;
   }
 }
 
-/* Modern Glowing Logo */
+/* Enhanced Modern Glowing Logo */
 .logo-container {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .logo {
@@ -526,12 +612,25 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(170, 54, 124, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(170, 54, 124, 0.2);
 }
 
 .logo-text {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
-  background: linear-gradient(90deg, #AA367C 0%, #4A2FBD 100%);
+  background: linear-gradient(135deg, #AA367C 0%, #4A2FBD 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -543,35 +642,39 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
 
 .logo-glow {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   background: radial-gradient(
     circle,
-    rgba(170, 54, 124, 0.4) 0%,
-    rgba(74, 47, 189, 0.2) 50%,
+    rgba(170, 54, 124, 0.3) 0%,
+    rgba(74, 47, 189, 0.15) 50%,
     rgba(0, 0, 0, 0) 70%
   );
-  filter: blur(10px);
-  opacity: 0.7;
+  filter: blur(15px);
+  opacity: 0.6;
   z-index: 1;
-  animation: pulse 3s infinite alternate;
+  animation: pulse 4s infinite alternate;
 }
 
 @keyframes pulse {
   0% {
-    transform: scale(0.8);
-    opacity: 0.5;
+    transform: scale(0.9);
+    opacity: 0.4;
   }
   100% {
-    transform: scale(1.2);
-    opacity: 0.9;
+    transform: scale(1.1);
+    opacity: 0.8;
   }
 }
 
 /* Make the logo responsive */
 @media (max-width: 768px) {
+  .logo {
+    padding: 6px 12px;
+  }
+  
   .logo-text {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -2657,8 +2760,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
 .company-name,
 .institution-name {
   font-size: 14px;
-  font-weight: 500;
-  color: rgba(184, 184, 184, 0.85);
+  font-weight: 700 !important;
+  color: rgba(255, 255, 255, 0.95) !important;
   margin-bottom: 0;
   text-align: inherit;
   word-wrap: break-word;
@@ -2934,6 +3037,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
   .company-name,
   .institution-name {
     font-size: 16px;
+    font-weight: 700 !important;
+    color: rgba(255, 255, 255, 0.95) !important;
   }
   
   .experience-description p,
@@ -3022,6 +3127,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
   .company-name,
   .institution-name {
     font-size: 15px;
+    font-weight: 700 !important;
+    color: rgba(255, 255, 255, 0.95) !important;
   }
   
   .experience-description p,
