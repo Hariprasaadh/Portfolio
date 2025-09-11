@@ -4,9 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import cropcore from "../assets/img/Banner.jpg";
 import dronedetect from "../assets/img/dronedetect.jpg";
-import konvoo from "../assets/img/konvoo.png";
+import glucozap from "../assets/img/glucozap.png";
 import career from "../assets/img/careertrack.png";
-import ariaai from "../assets/img/aria.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -22,12 +21,12 @@ export const Projects = () => {
       tags: ["Next.js", "FastAPI", "Langchain","LLMs"]
     },
     {
-      title: "Konvoo",
-      description: "A modern social media platform built for seamless, real-time connection.",
-      imgUrl: konvoo,
-      githubLink: "https://github.com/Hariprasaadh/Konvoo-social-media-app",
-      demoLink: "https://konvoo.vercel.app/",
-      tags: ["Next.js", "PostgreSQL", "Prisma","TypeScript"]
+      title: "Glucozap",
+      description: "An AI-powered health platform using computer vision, machine learning, and LLM for comprehensive health assessments.",
+      imgUrl: glucozap,
+      githubLink: "https://github.com/Hariprasaadh/GlucoZap",
+      demoLink: "https://glucozap.vercel.app/",
+      tags: ["Next.js", "Supabase", "Yolo","TypeScript","Langchain"]
     },
     {
       title: "DroneDetect",
