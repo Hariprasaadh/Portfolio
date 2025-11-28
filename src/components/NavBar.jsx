@@ -18,6 +18,21 @@ export const NavBar = () => {
       } else {
         setScrolled(false);
       }
+
+      // Scroll Spy Logic
+      const sections = ['home', 'skills', 'experience', 'projects', 'education'];
+      const scrollPos = window.scrollY + 200; // Offset for navbar height and better trigger
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetHeight = element.offsetHeight;
+          if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
+            setActiveLink(section);
+          }
+        }
+      }
     }
 
     window.addEventListener("scroll", onScroll);
@@ -48,7 +63,6 @@ export const NavBar = () => {
           <Navbar.Toggle 
             aria-controls="basic-navbar-nav"
             onClick={() => setExpanded(!expanded)}
-            className="modern-toggler"
           >
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
