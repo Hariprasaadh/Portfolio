@@ -574,7 +574,7 @@ nav.navbar.modern-navbar .navbar-nav .nav-link.modern-nav-link.active::after {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 150px 0 100px 0;
+  padding: 180px 0 100px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2503,7 +2503,7 @@ nav.navbar.modern-navbar .navbar-nav .nav-link.modern-nav-link.active::after {
 /* Banner Mobile Styling */
 @media screen and (max-width: 991px) {
   .banner {
-    padding: 100px 0 50px 0;
+    padding: 140px 0 50px 0;
     text-align: center;
     min-height: auto;
   }
@@ -2538,7 +2538,7 @@ nav.navbar.modern-navbar .navbar-nav .nav-link.modern-nav-link.active::after {
 
 @media screen and (max-width: 576px) {
   .banner {
-    padding: 80px 15px 40px 15px;
+    padding: 120px 15px 40px 15px;
   }
   
   .banner img,
