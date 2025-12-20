@@ -149,35 +149,35 @@ export const skills = [
           image:
             "https://icon.icepanel.io/Technology/svg/Git.svg",
         },
+        {
+          name: "GitHub Actions",
+          image:
+            "https://avatars.githubusercontent.com/u/44036562?s=200&v=4",
+        },
       ],
     },
     {
-      title: "DevTools",
+      title: "Data Analytics",
       skills: [
         {
-          name: "VS Code",
+          name: "Python",
           image:
-            "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg",
+            "https://icon.icepanel.io/Technology/svg/Python.svg",
         },
         {
-          name: "PyCharm",
+          name: "SQL",
           image:
-            "https://icon.icepanel.io/Technology/svg/PyCharm.svg",
+            "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
         },
         {
-          name: "Jupyter",
+          name: "R",
           image:
-            "https://icon.icepanel.io/Technology/png-shadow-512/Jupyter.png",
+            "https://www.r-project.org/logo/Rlogo.svg",
         },
         {
-          name: "IntelliJ Idea",
+          name: "PowerBI",
           image:
-            "https://icon.icepanel.io/Technology/svg/IntelliJ-IDEA.svg",
-        },
-        {
-          name: "GitHub",
-          image:
-            "https://img.icons8.com/?size=512&id=52539&format=png",
+            "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg",
         },
       ],
     },
