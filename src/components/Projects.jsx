@@ -3,7 +3,7 @@ import React, { memo, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import cropcore from "../assets/img/Banner.jpg";
-import dronedetect from "../assets/img/dronedetect.jpg";
+import deepretrieve from "../assets/img/deepretrieve.jpg";
 import glucozap from "../assets/img/glucozap.png";
 import career from "../assets/img/careertrack.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -12,6 +12,14 @@ import TrackVisibility from 'react-on-screen';
 
 // Static project data - extracted outside component
 const PROJECTS_DATA = [
+  {
+    title: "DeepRetrieve",
+    description: "Agentic multimodal RAG with CLIP embeddings, MCP orchestration, and intelligent web fallback.",
+    imgUrl: deepretrieve,
+    githubLink: "https://github.com/Hariprasaadh/DeepRetrieve",
+    demoLink: "https://deep-retrieve.vercel.app/",
+    tags: ["Agentic RAG", "Multimodal AI", "CLIP", "MCP", "Qdrant"]
+  },
   {
     title: "CareerTrack",
     description: "An all-in-one platform empowering students in their career journey.",
@@ -27,14 +35,6 @@ const PROJECTS_DATA = [
     githubLink: "https://github.com/Hariprasaadh/GlucoZap",
     demoLink: "https://glucozap.vercel.app/",
     tags: ["Next.js", "Supabase", "Yolo", "TypeScript", "Langchain"]
-  },
-  {
-    title: "DroneDetect",
-    description: "An AI-powered system for real-time drone threat classification.",
-    imgUrl: dronedetect,
-    githubLink: "https://github.com/Hariprasaadh/drone_threat",
-    demoLink: "",
-    tags: ["Next.js", "Computer Vision", "DeepSort", "Threat Classification"]
   },
   {
     title: "Crop Core Tech",
